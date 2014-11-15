@@ -1,0 +1,13 @@
+﻿<UserControl x:Name="userControl" x:Class="EyeTracking.App.ErrorMarker"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="{Binding MaximumErrorSize, ElementName=userControl}" d:DesignWidth="{Binding MaximumErrorSize, ElementName=userControl}">
+    <Grid>
+        <Ellipse x:Name="maxError" Width="{Binding MaximumErrorSize, ElementName=userControl}" Height="{Binding MaximumErrorSize, ElementName=userControl}" Fill="#54FF0000" Stroke="Black" StrokeThickness="2"/>
+        <Ellipse x:Name="meanError" Width="{Binding MeanErrorSize, ElementName=userControl}" Height="{Binding MeanErrorSize, ElementName=userControl}" Fill="#7FFFB636" Stroke="Red" />
+        <Ellipse Fill="Black" Stroke="Black" Width="10" Height="10"/>
+    </Grid>
+</UserControl>

@@ -147,7 +147,8 @@ $RECYCLE.BIN/
 # Mac crap
 .DS_Store
 
-SharedLibs
+SharedLibs/*
+!SharedLibs/README.md
 
 # NuGet Packages Directory
 ## TODO: If you have NuGet Package Restore enabled, uncomment the next line
